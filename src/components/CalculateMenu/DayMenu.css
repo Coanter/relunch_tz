@@ -1,0 +1,115 @@
+/* Контейнер всего блока */
+.day-menu-container {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    overflow: hidden; /* чтобы при сворачивании контент плавно скрывался */
+  }
+  
+  /* Шапка с заголовком и карточками */
+  .day-menu-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;       /* чтобы пользователь понимал, что на неё можно нажать */
+    user-select: none;     /* чтобы случайно не выделять текст при клике */
+    background-color: #fef7f0; 
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Заголовок "День 1" */
+  .day-menu-header h2 {
+    margin: 0;
+    margin-right: 16px;
+    font-size: 1.2rem;
+  }
+  
+  /* Блок с карточками для показателей (Калории, Белки и т.д.) */
+  .nutrients {
+    display: flex;
+    gap: 8px;
+    margin-right: auto; /* чтобы «отодвинуть» стрелку вправо */
+  }
+  
+  /* Общий стиль карточек */
+  .nutrient-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #333;
+    min-width: 70px;
+    font-weight: 500;
+  }
+  
+  /* Можно задавать разные цвета для разных типов */
+  .nutrient-card.calories {
+    background-color: #ffd7b8;
+  }
+  
+  .nutrient-card.proteins {
+    background-color: #b8ffd4;
+  }
+  
+  .nutrient-card.fats {
+    background-color: #ffb8b8;
+  }
+  
+  .nutrient-card.carbs {
+    background-color: #b8e1ff;
+  }
+  
+  /* Стрелочка (треугольник), который будет поворачиваться */
+  .arrow {
+    width: 0;
+    height: 0;
+    margin-left: 16px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666;  /* цвет стрелки */
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  /* Содержимое, которое раскрывается */
+  .day-menu-content {
+    padding: 16px;
+    background-color: #fff;
+  }
+  
+  /* Секции приёма пищи (Завтрак, Обед, Ужин и т.д.) */
+  .meal-section {
+    margin-bottom: 16px;
+  }
+  
+  /* Заголовок каждого приёма пищи */
+  .meal-section h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Контейнер для списка блюд */
+  .meal-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  /* Отдельная "плитка" блюда */
+  .meal-item {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  

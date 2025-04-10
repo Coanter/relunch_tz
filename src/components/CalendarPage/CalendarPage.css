@@ -1,0 +1,236 @@
+/* Общий контейнер */
+.calendar-page {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+  
+  /* Шапка (заголовок и переключатель) */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Левая часть заголовка */
+  .title-block h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .title-block .date-range {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Кнопки переключения вида (Неделя/Месяц) */
+  .view-switcher button {
+    margin-left: 8px;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .view-switcher button.active {
+    background-color: #f9a77d; /* пример цвета */
+    border-color: #f9a77d;
+    color: #fff;
+  }
+  
+  /* Основной контент: левая и правая части */
+  .calendar-content {
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* Левая часть */
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Список дней недели (горизонтальный) */
+  .week-days {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  /* Каждая «кнопка» дня */
+  .day-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    padding: 8px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .day-box.selected {
+    background-color: #f9a77d;
+    color: #fff;
+    border-color: #f9a77d;
+  }
+  
+  /* Внутри day-box */
+  .day-number {
+    font-weight: bold;
+  }
+  .day-label {
+    font-size: 0.8rem;
+    color: inherit;
+  }
+  
+  /* Блок с приёмами пищи */
+  .meals-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .meal-row h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Сетка блюд */
+  .meal-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .meal-item {
+    background-color: #fff7f0;
+    border: 1px solid #f2dfd1;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  /* Кнопка Экспорт в PDF */
+  .export-btn {
+    align-self: flex-start;
+    padding: 10px 16px;
+    background-color: #ff9b6a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Правая часть */
+  .right-side {
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Мини-календарь */
+  .mini-calendar {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  .mini-calendar h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Сетка мини-календаря (7 колонок) */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+  }
+  
+  /* Заголовки дней недели */
+  .day-header {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  /* Ячейки с датами */
+  .day-cell {
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  .day-cell:hover {
+    background-color: #f0e9e0;
+  }
+  .day-cell.current-day {
+    background-color: #f9a77d;
+    color: #fff;
+    border-color: #f9a77d;
+  }
+  
+  /* Блок "Поделиться" */
+  .share-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .share-section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+  .access-label {
+    display: block;
+    margin-bottom: 12px;
+  }
+  .access-label input {
+    display: block;
+    margin-top: 4px;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Чекбоксы */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .checkbox-group label {
+    font-size: 0.9rem;
+  }
+  
+  /* Кнопка "Поделиться" */
+  .share-btn {
+    padding: 8px 16px;
+    background-color: #ff9b6a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

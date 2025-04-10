@@ -1,0 +1,136 @@
+/* Общий контейнер страницы */
+.warehouse-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-left: 300px;
+  }
+  
+  /* Шапка (заголовок + поиск + иконка) */
+  .warehouse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .warehouse-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .header-right input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .header-btn {
+    padding: 8px 12px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Обзор аналитики */
+  .analytics-overview h2 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+  }
+  .analytics-cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .analytics-card {
+    flex: 1;
+    min-width: 120px;
+    padding: 16px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .analytics-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .analytics-title {
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* Список продуктов на складе */
+  .products-list {
+    margin-top: 24px;
+  }
+  .products-list h2 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+  }
+  
+  /* Таблица */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    background-color: #fff;
+  }
+  thead {
+    background-color: #f7f7f7;
+  }
+  th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  /* Статусы (В наличии, Низкий запас и т.д.) */
+  .status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #e8f5e9; /* зеленоватый фон по умолчанию */
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #333;
+  }
+  .status-badge.low {
+    background-color: #ffe9e9; /* красноватый фон */
+    color: #d9534f;
+  }
+  
+  /* Блок с кнопками +/- */
+  .adjust-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .adjust-box button {
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .adjust-box span {
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  /* Кнопка «Сохранить» */
+  .save-btn {
+    padding: 8px 16px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

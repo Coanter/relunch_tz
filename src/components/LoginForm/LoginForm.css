@@ -1,11 +1,12 @@
-body {
+.login-body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background: linear-gradient(135deg, #fff, #ffe5d9);
+  background: linear-gradient(135deg, #fff, #ffe5d9, #fff, #ffe5d9);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .login-container {

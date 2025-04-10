@@ -4,6 +4,7 @@ import "../RegistrationForm/RegistrationForm.css";
 
 const RegisterForm = () => {
   return (
+  <div className="register-body">
     <div className="login-container">
       <img src="/logo2-1.png" alt="Relunch Logo" className="logo" />
       <h2 className="welcome-text">Создайте аккаунт</h2>
@@ -34,6 +35,7 @@ const RegisterForm = () => {
         <span className="remember">Зарегистрироваться с помощью Google</span>
       </button>
     </div>
+  </div>
   );
 };
 

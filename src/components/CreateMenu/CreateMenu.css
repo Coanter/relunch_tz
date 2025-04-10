@@ -1,0 +1,191 @@
+
+
+.create-menu-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #fff, #ffe5d9, #fff, #ffe5d9);
+
+}
+
+.create-menu-header{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.create-menu-content {
+    padding: 30px;
+    /* flex-grow: 1; Убрал */
+    width: 100%;
+    margin-left: 300px;
+    /* overflow-y: auto; Убрал */
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.create-menu-title {
+    font-size: 2em;
+    color: #333;
+    /* flex-shrink: 0; Убрал */
+}
+
+.input-area {
+    height: 100%;
+    display: flex;
+    gap: 30px; /* Добавляем отступ между секциями */
+    /* flex-grow: 1; Убрал */
+}
+
+.input-section,
+.load-menu-section {  /* Добавил .load-menu-section сюда */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%; /*  Каждая секция по 50% ширины  */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 19px;
+}
+
+
+
+/* Стили для input-section (без изменений) */
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.input-section input[type="text"],
+.input-section select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.season-options,
+.meal-count-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.season-options label,
+.meal-count-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* flex-basis: calc(50% - 10px); Убрал */
+}
+
+.generate-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 16px;
+}
+
+.generate-button:hover {
+  background-color: #e65c00;
+}
+
+/* Стили для load-menu-section (новые) */
+.load-menu-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.load-button {
+    background-color: white;
+    border: 1px solid #ccc; /* Добавил границу */
+    padding: 0; /* Убрал внутренний отступ */
+    width: 40px; /* Задаем размер квадрата */
+    height: 40px; /* Задаем размер квадрата */
+    border-radius: 4px; /* Скругляем углы */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex; /* Добавлено для центрирования (если будут иконки) */
+    justify-content: center; /* Добавлено для центрирования */
+    align-items: center; /* Добавлено для центрирования */
+    background-image: url("images.png");
+    background-size: 39px;
+}
+
+
+.load-menu-section textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.save-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto; /* Прижимаем кнопку к низу */
+    align-self: flex-start; /* Выравниваем по левому краю */
+    font-size: 16px;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.clear-button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* top: 30px;
+    right: 30px; */
+    align-self: center; /* Выравниваем кнопку по правому краю */
+    margin-right: 15px;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+.gensave-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto; /* Прижимаем к низу */
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 5px; /* Добавляем отступ между кнопкой и текстом */
+  }
