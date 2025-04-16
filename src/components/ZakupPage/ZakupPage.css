@@ -1,0 +1,177 @@
+/* Общий контейнер для страницы «Закуп» */
+.zakup-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff7f0; /* Можно изменить под ваш дизайн */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* При желании можно использовать фиксированную высоту */
+    margin-left: 300px;
+  }
+  
+  /* Шапка с кнопкой «назад» и вкладками */
+  .zakup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+  }
+  .back-btn {
+    padding: 8px 12px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .tabs {
+    display: flex;
+    gap: 8px;
+  }
+  .tabs button {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .tabs button.active {
+    background-color: #f9a77d;
+    color: #fff;
+    border-color: #f9a77d;
+  }
+  
+  /* Основной контейнер: левая колонка (товары) и правая (корзина) */
+  .zakup-container {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    overflow: auto; /* Для скролла, если контента много */
+  }
+  
+  /* Список товаров (сетка) */
+  .products-list- {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    overflow-y: auto;
+  }
+  
+  /* Карточка отдельного продукта */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+  .image-container {
+    width: 100%;
+    height: 120px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .product-card h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    color: #f68181; /* Можно изменить */
+    font-weight: bold;
+  }
+  .add-btns button {
+    margin-left: 4px;
+    padding: 4px 8px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Правая колонка (корзина) */
+  .cart {
+    width: 320px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .cart h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  .clear-cart-btn {
+    align-self: flex-end;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    background-color: #ff6f6f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Список товаров в корзине */
+  .cart-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cart-item-name {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  .cart-controls {
+    display: flex;
+    gap: 4px;
+    margin: 0 8px;
+  }
+  .cart-controls button {
+    padding: 4px 8px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cart-item-price {
+    min-width: 80px;
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  
+  /* Итоговая сумма */
+  .cart-total {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  

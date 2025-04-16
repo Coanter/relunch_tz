@@ -1,0 +1,261 @@
+.settings-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff7f0; /* Цвет фона, похожий на макеты */
+    margin-left: 300px;
+  }
+  
+  /* Шапка */
+  .settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .settings-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .header-right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .header-right input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .exit-btn {
+    padding: 8px 12px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Вкладки */
+  .settings-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .settings-tabs button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .settings-tabs button.active {
+    background-color: #f9a77d;
+    color: #fff;
+    border-color: #f9a77d;
+  }
+  
+  /* Содержимое вкладок */
+  .settings-content {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  /* Общий стиль для заголовков во вкладках */
+  .settings-content h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  /* Кнопка «Сохранить» */
+  .save-btn {
+    margin-top: 16px;
+    padding: 10px 16px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ---------- Вкладка «Профиль» ---------- 
+  .profile-tab {
+ Можно добавить дополнительные стили 
+  }*/
+
+  .avatar-section {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+  }
+  .avatar-buttons button {
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .profile-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .profile-form .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-form .form-row label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  .profile-form .form-row input,
+  .profile-form .form-row textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .profile-form .form-row.full-width {
+    grid-column: span 2;
+  }
+  
+  /* ---------- Вкладка «Пищевые ограничения» ----------
+  .food-tab {
+ Дополнительные стили при необходимости 
+  }*/
+  .allergies-block,
+  .preferences-block {
+    margin-bottom: 16px;
+  }
+  .allergy-groups {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 12px;
+  }
+  .allergy-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .allergy-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .allergy-details label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  .allergy-details input {
+    margin-top: 4px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .preferences-block textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* ---------- Вкладка «Уведомления» ---------- */
+  .notifications-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    gap: 16px;
+  }
+  
+  .notifications-tab > div:nth-child(4) {
+    grid-column: 1 / -1; /* третий блок занимает всю ширину второй строки */
+  }
+  
+  /* Задачи */
+  .tasks-block {
+    grid-column: 1/2;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .tasks-block h3 {
+    margin-top: 0;
+  }
+  .task-item {
+    margin-bottom: 8px;
+  }
+  .see-all-tasks {
+    margin-top: 8px;
+  }
+  .see-all-tasks a {
+    font-size: 0.9rem;
+    color: #f9a77d;
+    text-decoration: none;
+  }
+  
+  /* Календарь */
+  .calendar-block {
+    grid-column: 2/3;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .calendar-block h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+  }
+  .calendar-cell {
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    min-height: 40px;
+  }
+  
+  /* Уведомления / Сообщения */
+  .messages-block {
+    grid-column: 3/4;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .messages-block h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .messages-block table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .messages-block th,
+  .messages-block td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  .messages-block th {
+    background-color: #f7f7f7;
+  }
+  

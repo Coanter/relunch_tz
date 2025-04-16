@@ -10,6 +10,9 @@ import CalendarPage from "./components/CalendarPage/CalendarPage.jsx";
 import LibraryPage from "./components/LibraryPage/LibraryPage.jsx";
 import WarehousePage from "./components/WarehousePage/WarehousePage.jsx";
 import HistoryPage from "./components/HistoryPage/HistoryPage.jsx";
+import SettingsPage from "./components/SettingsPage/SettingsPage";
+import SupportPage from "./components/SupportPage/SupportPage.jsx";
+import ZakupPage from "./components/ZakupPage/ZakupPage";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="/library" element={<LibraryPage />} />
           <Route path="/warehouse" element={<WarehousePage />} />
           <Route path="/menu-history" element={<HistoryPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/support" element={<SupportPage />} />
+          <Route path="/zakup" element={<ZakupPage />} />
         </Routes>
       </div>
     </Router>

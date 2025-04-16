@@ -1,0 +1,144 @@
+/* Общий контейнер страницы */
+.support-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-left: 300px;
+  }
+  
+  /* Шапка (заголовок + кнопка «Выйти») */
+  .support-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .support-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .exit-btn {
+    padding: 8px 16px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Основной заголовок */
+  .main-question {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  /* Поисковая строка */
+  .search-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .search-block input {
+    width: 50%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Часто задаваемые вопросы (FAQ) */
+  .faq-section {
+    margin-bottom: 32px;
+  }
+  .faq-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  
+  /* Контейнер для списка вопросов */
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  /* Отдельный элемент FAQ */
+  .faq-item {
+    flex: 1 1 calc(50% - 8px);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .faq-item:hover {
+    background-color: #fff7f0;
+  }
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    font-weight: bold;
+  }
+  .arrow-icon {
+    margin-left: 8px;
+    font-size: 0.8rem;
+  }
+  .faq-answer {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Блок формы «Всё еще нужна помощь?» */
+  .help-form-section h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  
+  /* Стили формы обратной связи */
+  .help-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-row label {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+  }
+  .form-row input,
+  .form-row textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Растянуть на 2 колонки (например, для textarea) */
+  .form-row.full-width {
+    grid-column: span 2;
+  }
+  
+  /* Кнопка «Отправить» */
+  .send-btn {
+    grid-column: span 2;
+    padding: 10px 16px;
+    background-color: #f9a77d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-self: start; /* чтобы кнопка была слева */
+  }
+  
