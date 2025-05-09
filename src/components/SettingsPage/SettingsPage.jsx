@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import "./SettingsPage.css";
+import { useNavigate } from "react-router-dom";
+
+
 
 function SettingsPage() {
   // Состояние для выбранной вкладки
   const [activeTab, setActiveTab] = useState("profile");
 
+  const navigate = useNavigate();
+    const goToLogin = () => {
+      navigate("/");
+    };
   // Переключатель вкладок
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -19,7 +26,7 @@ function SettingsPage() {
         {/* Пример поля поиска и кнопки «Выйти» (как на скриншоте) */}
         <div className="header-right">
           <input type="text" placeholder="Найти..." />
-          <button className="exit-btn">Выйти</button>
+          <button onClick={goToLogin} className="exit-btn">Выйти</button>
         </div>
       </div>
 

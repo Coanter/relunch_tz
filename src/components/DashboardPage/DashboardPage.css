@@ -1,0 +1,127 @@
+.dashboard-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 80px;
+    background: linear-gradient(135deg, #fff, #ffe5d9, #fff, #ffe5d9);
+    height: 100vh;
+  }
+  
+  /* Header */
+  .dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dash-search {
+    flex: 1;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .dash-date {
+    font-size: 0.9rem;
+  }
+  .dash-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Welcome */
+  .welcome-section {
+    background: linear-gradient(to right, #ffd6b5, #ffe8d0);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 24px;
+    width: 55%;
+  }
+  .welcome-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .welcome-text h2 {
+    margin: 0 0 4px;
+  }
+  .welcome-text p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Tasks */
+  .tasks-section {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    width: 20%;
+  }
+  .tasks-section h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .tasks-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+  }
+  .tasks-section li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .task-color {
+    width: 4px;
+    height: 40px;
+    border-radius: 2px;
+  }
+  .task-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .task-due {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Navigation cards */
+  .nav-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+  }
+  .nav-card {
+    background: linear-gradient(to right, #ffd6b5, #ffe8d0);
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 150px;
+  }
+  .nav-card:hover {
+    background: linear-gradient(to right, #ffc29c, #ffd6b5);
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+  .nav-label {
+    font-size: 0.95rem;
+  }
+  
+
+  .welcome-tasks{
+    display: flex;
+    gap: 24px;
+  }

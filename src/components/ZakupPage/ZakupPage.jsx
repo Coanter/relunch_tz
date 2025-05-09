@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function ZakupPage() {
     const navigate = useNavigate();
       const goToback = () => {
-        navigate("/calculate-menu");
+        navigate("/menu");
       };
 
   // Переключатель «Неделя» / «Месяц»

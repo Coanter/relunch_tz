@@ -11,7 +11,7 @@ const LoginForm = () => {
     // ...
 
     // Перенаправляем на страницу главного меню
-    navigate("/create-menu");
+    navigate("/dashboard"); // Измените на нужный путь
   };
 
 

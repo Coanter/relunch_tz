@@ -5,14 +5,13 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 45vh; /* Занимает всю высоту */
+    height: 55vh; /* Занимает всю высоту */
     position: fixed; /* Фиксированное позиционирование */
     top: 0;
     left: 0;
     z-index: 100; /* Чтобы сайдбар был поверх остального контента */
     overflow-y: auto; /* Добавляем прокрутку, если пунктов меню много */
     border-radius: 0px 0px 10px 0px;
-    padding-top: 50px;
   }
   
   .sidebar-logo {
@@ -48,4 +47,8 @@
   
   .sidebar-nav .icon {
     margin-right: 10px;
+  }
+
+  .welcome-logo2 {
+    width: 150px;
   }

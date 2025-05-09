@@ -13,6 +13,8 @@ import HistoryPage from "./components/HistoryPage/HistoryPage.jsx";
 import SettingsPage from "./components/SettingsPage/SettingsPage";
 import SupportPage from "./components/SupportPage/SupportPage.jsx";
 import ZakupPage from "./components/ZakupPage/ZakupPage";
+import DashboardPage from './components/DashboardPage/DashboardPage';
+import MonthlyMenuPage from './components/MenuPage/MenuPage.jsx';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/zakup" element={<ZakupPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/menu" element={<MonthlyMenuPage />} />
         </Routes>
       </div>
     </Router>

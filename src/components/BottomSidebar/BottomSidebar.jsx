@@ -6,7 +6,7 @@ const BottomSidebar = () => {
   const location = useLocation();
 
   // Скрываем на страницах логина и регистрации
-  if (location.pathname === '/' || location.pathname === '/register') {
+  if (location.pathname === '/' || location.pathname === '/register' || location.pathname === '/dashboard') {
     return null;
   }
 
